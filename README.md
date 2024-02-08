@@ -1,5 +1,5 @@
-ONC file in network config to completly block HTML traffic in extensions.
-
+# SecurlyONC
+ONC file in network config to completly block HTML traffic in extensions.<br/>
 ** EXPERIMENTAL ** This may work or not work. If it doesn't, please make an Issue in GitHub Issues.<br/>
 ** I DO NOT TAKE ANY RESPONSIBILITY ** Any inconvenience or problems caused by SecurlyONC is your responsibilty.<br/>
 <br/>
