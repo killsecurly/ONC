@@ -12,4 +12,5 @@ Unzip kill.onc<br/>
 Go to `chrome://network` and upload under Import ONC File<br/>
 <br/>
 Works with Securly, GoGuardian, CKAuth, and more!<br/>
+Currently doesn't work with chromebooks with Endpoint Verification. This will not work, because of EndPoint integrating with the main system OS.<br/>
 Credit to omadaDNS, caub, and killsecurly. Idea by bypassi.<br/>
