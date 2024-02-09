@@ -5,7 +5,7 @@ ONC file in network config to completly block HTML traffic in extensions.<br/>
 ** I DO NOT TAKE ANY RESPONSIBILITY ** Any inconvenience or problems caused by SecurlyONC is your responsibilty.<br/>
 <br/>
 ** HOW TO **<br/>
-Go to main page (index.txt) and paste all network config files from:<br/>
+Go to main page at `https://killsecurly.github.io/ONC` and paste all network config files from:<br/>
   `chrome://network#state` then plus under wifi network under Favorite Networks<br/>
 Paste all text popped up into textbox<br/>
 Download and Unzip<br/>
