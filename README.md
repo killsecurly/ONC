@@ -1,4 +1,4 @@
-# SecurlyONC
+# SecurlyONC (Beta Branch)
 __Beta for Chrome__<br/>
 Network config ONC file to completely disable extensions such as GoGuardian and Securly.<br/>
 <br/>
