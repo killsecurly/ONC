@@ -17,5 +17,8 @@ Go to `chrome://network` and upload under Import ONC File<br/>
 ** HOW TO DISABLE **<br/>
 Upload `revive.onc` onto Import ONC File. You can find `revive.onc` in the ZIP you downloaded.<br/>
 <br/>
+** TURN ON WHEN CLASSROOM IS DISABLED **<br/>
+If you start ONC with Securly Classroom on, the device will never get the signal to turn Classroom off, which causes the flitering to stay active forever.<br/>
+<br/>
 Works with Securly, GoGuardian, CKAuth, and more!<br/>
 Credit to omadaDNS, caub, and killsecurly.<br/>
