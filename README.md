@@ -1,4 +1,9 @@
 # SecurlyONC
+__CURRENT BUGS__<br/>
+Currently, the ONC network config blocks these SSO (Single-Sign-On) Applications:<br/>
+Clever, CPM Educational Program, Writable<br/>
+Turn off by using `revive.onc` when you have to turn on SSO.<br/>
+<br/>
 __Beta for Chrome__<br/>
 Network config ONC file to completely disable extensions such as GoGuardian and Securly.<br/>
 <br/>
@@ -12,7 +17,6 @@ Paste all text popped up into textbox<br/>
 Download and Unzip<br/>
 Unzip kill.onc<br/>
 Go to `chrome://network` and upload under Import ONC File<br/>
-<br/>
 <br/>
 ** HOW TO DISABLE **<br/>
 Upload `revive.onc` onto Import ONC File. You can find `revive.onc` in the ZIP you downloaded.<br/>
