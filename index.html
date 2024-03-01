@@ -3,15 +3,16 @@
 <script src='filesaver.js'></script>
 <div id="started">
         <div class="cont">
-                <b><h2>killsecurly/ONC</h2></b>
-                <b>The download button will not do anything unless you type in the correct Wi-Fi properties.</b>
-                <b>The owners of this GitHub Repo is NOT reponsible for any damages caused by SecurlyONC or similar software. By clicking Download, you agree to not sue.</b>
+                <h2>killsecurly/ONC</h2>
+                <b style="font-size:15px">The download button will not do anything unless you type in the correct Wi-Fi properties.<br/><br/></b>
+                <b style="font-size:15px">User assumes all liablity. Instructions are <a href=https://github.com/killsecurly/ONC/blob/stable/README.md style="color:blue">here.</a><br/><br/></b>
+                <b style="font-size:15px">ZIP file size about 1 KB</b>
         </div>
 </div>
 <input type="text" id="input" placeholder="Type network properties...">
 <div style="position:absolute;bottom:5px;z-index:99999;" id="credits">
 </div>
-<button id="button" onclick="load();">Download</button>
+<button id="button" onclick="load();">Download ONC</button>
 <div id="finished">
 </div>
 <div id="advancedbutton" onclick="adv();">Advanced +</div>
@@ -186,7 +187,7 @@
                 color:black;
                 padding:10px;
                 border:3px solid black;
-                border-radius:25px;
+                border-radius:10px;
         }
         ::placeholder{
                 color:black;
