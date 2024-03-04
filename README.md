@@ -27,4 +27,4 @@ Turn off by using `revive.onc` when you have to turn on SSO.<br/>
 
 ## Credits<br/>
 Works with Securly, GoGuardian, CKAuth, and more!<br/>
-Credit to omadaDNS, caub, and killsecurly.<br/>
+Credit to omadaDNS, caub, dragon73101, and killsecurly.<br/>
