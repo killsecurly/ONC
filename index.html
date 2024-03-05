@@ -4,9 +4,10 @@
 <div id="started">
         <div class="cont">
                 <h2>killsecurly/ONC</h2>
+                <b style="font-size:20px">Providing freedom for students spied on by Securly.</b>
                 <b style="font-size:15px">The download button will not do anything unless you type in the correct Wi-Fi properties.<br/><br/></b>
                 <!--Update the Instructions Permalink Every README change-->
-                <b style="font-size:15px">User assumes all liablity. Instructions are <a href=https://github.com/killsecurly/ONC/blob/d1a97c9a80e90cf1b3f288c8744ff37431dcfef5/README.md style="color:blue">here.</a><br/><br/></b>
+                <b style="font-size:15px">User assumes all liablity. Instructions are <a href=https://github.com/killsecurly/ONC/blob/d1a97c9a80e90cf1b3f288c8744ff37431dcfef5/README.md style="color:blue">here.</a><br/></b>
                 <b style="font-size:15px">ZIP file size about 1 KB</b>
         </div>
 </div>
@@ -246,14 +247,14 @@
         }
 </style>
 <script>
-        var dedns="167.86.91.171";	
-	var nydns="66.94.105.229";	
-	var idkdns="213.109.163.210";
-	var lastdns="92.60.37.102";
-	document.getElementById("ip1").value=dedns;
-	document.getElementById("ip2").value=nydns;
-	document.getElementById("ip3").value=idkdns;
-	document.getElementById("ip4").value=lastdns;
+        var dns_one="167.86.91.171";	
+	var dns_two="66.94.105.229";	
+	var dns_three="213.109.163.210";
+	var dns_four="92.60.37.102";
+	document.getElementById("ip1").value=dns_one;
+	document.getElementById("ip2").value=dns_two;
+	document.getElementById("ip3").value=dns_three;
+	document.getElementById("ip4").value=dns_four;
 
 
         /*ryan
@@ -377,9 +378,6 @@
                         document.getElementById("advancedbutton").style.display="none";
                 }
         }
-
-
-
 
         function download(object, fileName) {
                 let link = document.createElement("a");
