@@ -2,7 +2,7 @@
 Network config ONC file to completely disable extensions such as GoGuardian and Securly.<br/>
 <br/>
 The software `SecurlyONC` comes without any sort of warranty. All damages or inconvenience caused by SecurlyONC is all the user's liablity.<br/>
-## __v1.2.0 Stable for Chrome__<br/>
+## __v1.3.0 Stable for Chrome__<br/>
 ### How to Enable<br/>
 1. Go to `chrome://network#state` and click on `+` next to the network you want to enable ONC on.<br/>
 2. Go to main page at `https://killsecurly.github.io/ONC` and paste all text that appeared after the `+`.<br/>
