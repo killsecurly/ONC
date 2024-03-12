@@ -1,5 +1,6 @@
 # SecurlyONC
-Network config ONC file to completely disable extensions such as GoGuardian and Securly.<br/>
+Providing freedom for students spied on by Securly.<br/>
+__NOTE TO SCHOOL DISTRICTS:__ Under any circumstances, SecurlyONC will NOT be taken down in your favor. Do not ask.<br/>
 <br/>
 The software `SecurlyONC` comes without any sort of warranty. All damages or inconvenience caused by SecurlyONC is all the user's liablity.<br/>
 ## __v1.4.0 Stable for Chrome__<br/>
