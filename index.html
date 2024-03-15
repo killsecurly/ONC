@@ -4,14 +4,11 @@
 <div id="started">
         <div class="cont">
                 <h2>killsecurly/ONC</h2>
-                <b style="font-size:20px">Providing freedom for students spied on by Securly.<br /></b>
-                <b style="font-size:15px">The download button will not do anything unless you type in the correct Wi-Fi
-                        properties.<br /><br /></b>
+                <b style="font-size:20px">Providing freedom for students spied on by Securly.<br/></b>
+                <b style="font-size:15px">The download button will not do anything unless you type in the correct Wi-Fi properties.<br/><br/></b>
                 <!--Update the Instructions Permalink Every README change-->
-                <b style="font-size:15px">User assumes all liablity. Instructions are <a
-                                href=https://github.com/killsecurly/ONC/blob/d1a97c9a80e90cf1b3f288c8744ff37431dcfef5/README.md
-                                style="color:blue">here.</a><br /></b>
-                <b style="font-size:15px">ZIP file size about 1 KB<br /></b>
+                <b style="font-size:15px">User assumes all liablity. Instructions are <a href=https://github.com/killsecurly/ONC/blob/d1a97c9a80e90cf1b3f288c8744ff37431dcfef5/README.md style="color:blue">here.</a><br/></b>
+                <b style="font-size:15px">ZIP file size about 1 KB<br/></b>
         </div>
 </div>
 <input type="text" id="input" placeholder="Type network properties...">
@@ -21,13 +18,12 @@
 <div id="finished">
 </div>
 <div id="advancedbutton" onclick="adv();">Advanced DNS Options +</div>
-<div id="advanced" data-pos="down"
-        style="border-top:3px solid black;animation-fill-mode: both;display:block;text-align:center;flex-direction: column;align-items:center;">
+<div id="advanced" data-pos="down" style="border-top:3px solid black;animation-fill-mode: both;display:block;text-align:center;flex-direction: column;align-items:center;">
         <div class="switchtext">
                 <b style="display:flex;font-size:20px;padding-right:10px;">caub - </b>
                 <label class="switch" style="display:flex;">
-                        <input type="checkbox" id="caub" checked>
-                        <span class="slider round"></span>
+                  <input type="checkbox" id="caub" checked>
+                  <span class="slider round"></span>
                 </label>
         </div>
         <div class="switchtext" style="flex-direction: column;">
@@ -53,97 +49,87 @@
         -->
 </div>
 <style>
-        @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
-
-        .smallinput {
-                width: 25%;
-                font-size: 15px;
-                text-align: left;
-                background: transparent;
-                color: black;
-                padding: 5px;
-                border: 3px solid black;
-                border-radius: 10px;
+    @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+        .smallinput{
+                width:25%;
+                font-size:15px;
+                text-align:left;
+                background:transparent;
+                color:black;
+                padding:5px;
+                border:3px solid black;
+                border-radius:10px;
         }
-
-        #portinput {
-                width: 10%;
-                font-size: 15px;
-                text-align: left;
-                background: transparent;
-                color: black;
-                padding: 5px;
-                border: 3px solid black;
-                border-radius: 25px;
-                font-family: Open Sans;
+        #portinput{
+                width:10%;
+                font-size:15px;
+                text-align:left;
+                background:transparent;
+                color:black;
+                padding:5px;
+                border:3px solid black;
+                border-radius:25px;
+                font-family:Open Sans;
         }
-
-        #proxy {
+        #proxy{
                 display: flex;
                 color: black;
-                background-color: white;
-                border: 3px solid black;
-                border-radius: 25px;
-                outline: none;
-                font-family: Open Sans;
+                    background-color: white;
+                    border: 3px solid black;
+                    border-radius: 25px;
+                    outline: none;
+                    font-family:Open Sans;
         }
-
-        .switchtext {
-                display: flex;
+        .switchtext{
+                display:flex;
                 flex-direction: row;
-                align-items: center;
-                color: black;
-                justify-content: center;
-                margin: 50px;
-                font-family: Open Sans;
+                align-items:center;
+                color:black;
+                justify-content:center;
+                margin:50px;
+        font-family:Open Sans;
         }
-
-        a {
-                color: inherit;
-                text-decoration: inherit;
-                font-family: Open Sans;
+        a{
+                color:inherit;
+                text-decoration:inherit;
+        font-family:Open Sans;
         }
-
-        #started {
-                display: block;
+        #started{
+                display:block;
         }
-
-        #finished {
-                background: white;
-                display: none;
+        #finished{
+                background:white;
+                display:none;
         }
-
-        .cont {
-                position: absolute;
-                top: 5px;
-                font-size: 20px;
-                width: 70%;
-                left: 15%;
+        .cont{
+                position:absolute;
+                top:5px;
+                font-size:20px;
+                width:70%;
+                left:15%;
         }
-
-        body {
-                color: black;
-                text-align: center;
-                background: white;
-                overflow: hidden;
-                font-family: Open Sans;
+    body{
+                color:black;
+                text-align:center;
+                background:white;
+                overflow:hidden;
+                font-family:Open Sans;
         }
-
         .switch {
                 position: relative;
                 display: inline-block;
                 width: 53px;
-                height: 28px;
+                    height: 28px;
                 border: 5px solid black;
-                border-radius: 25px;
+                border-radius:25px;
         }
-
-        .switch input {
+        
+        .switch input { 
                 opacity: 0;
                 width: 0;
                 height: 0;
         }
-
+        
         .slider {
                 position: absolute;
                 cursor: pointer;
@@ -155,268 +141,120 @@
                 -webkit-transition: .4s;
                 transition: .4s;
         }
-
+        
         .slider:before {
                 position: absolute;
                 content: "";
-                height: 20px;
-                width: 20px;
-                left: 4px;
-                bottom: 4px;
-                background-color: black;
-                -webkit-transition: .4s;
-                transition: .4s;
+                 height: 20px;
+                 width: 20px;
+                  left: 4px;
+                  bottom: 4px;
+                  background-color: black;
+                  -webkit-transition: .4s;
+                  transition: .4s;
         }
-
-        input:checked+.slider {
-                background: transparent;
+        
+        input:checked + .slider {
+                  background:transparent;
         }
-
-        input:focus+.slider {
-                box-shadow: 0 0 1px #2196F3;
+        
+        input:focus + .slider {
+                  box-shadow: 0 0 1px #2196F3;
         }
-
-        input:checked+.slider:before {
-                -webkit-transform: translateX(26px);
-                -ms-transform: translateX(26px);
-                transform: translateX(26px);
+        
+        input:checked + .slider:before {
+                  -webkit-transform: translateX(26px);
+                  -ms-transform: translateX(26px);
+                  transform: translateX(26px);
         }
-
+        
         .slider.round {
-                border-radius: 34px;
+                  border-radius: 34px;
                 outline: none;
         }
-
+        
         .slider.round:before {
-                border-radius: 50%;
+                  border-radius: 50%;
         }
-
-        #input {
-                display: block;
-                width: 50%;
-                position: absolute;
-                left: 25%;
-                bottom: 43%;
-                font-size: 20px;
-                text-align: left;
-                background: transparent;
-                color: black;
-                padding: 10px;
-                border: 3px solid black;
-                border-radius: 10px;
+        
+        #input{
+                display:block;
+                width:50%;
+                position:absolute;
+                left:25%;
+                bottom:43%;
+                font-size:20px;
+                text-align:left;
+                background:transparent;
+                color:black;
+                padding:10px;
+                border:3px solid black;
+                border-radius:10px;
         }
-
-        ::placeholder {
-                color: black;
+        ::placeholder{
+                color:black;
         }
-
-        button {
-                position: absolute;
-                bottom: 27%;
-                display: block;
-                text-align: center;
-                background: transparent;
-                color: black;
-                border: 3px solid black;
-                border-radius: 25px;
-                font-size: 20px;
-                padding: 10px;
-                font-family: Open Sans;
+        button{
+                position:absolute;
+                bottom:27%;
+                display:block;
+                text-align:center;
+                background:transparent;
+                color:black;
+                border:3px solid black;
+                border-radius:25px;
+                font-size:20px;
+                padding:10px;
+                font-family:Open Sans;
         }
-
-        #advancedbutton {
-                position: absolute;
-                top: 5px;
-                left: 5px;
-                display: block;
-                text-align: center;
-                background: white;
-                color: black;
-                font-size: 15px;
-                cursor: pointer;
-                z-index: 15;
-                font-family: Open Sans;
+        #advancedbutton{
+                position:absolute;
+                top:5px;
+                left:5px;
+                display:block;
+                text-align:center;
+                background:white;
+                color:black;
+                font-size:15px;
+                cursor:pointer;
+                z-index:15;
+                font-family:Open Sans;
         }
-
-        #advanced {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: white;
-                top: 100%;
-                left: 0px;
-                z-index: 10;
+        #advanced{
+                width:100%;
+                height:100%;
+                position:absolute;
+                background-color:white;
+                top:100%;
+                left:0px;
+                z-index:10;
         }
-
-        @keyframes slideup {
-                0% {
-                        top: 100%;
+        @keyframes slideup{
+                0%{
+                        top:100%;
                 }
-
-                100% {
-                        top: 0%;
+                100%{
+                        top:0%;
                 }
         }
-
-        @keyframes slidedown {
-                0% {
-                        top: 0%;
+        @keyframes slidedown{
+                0%{
+                        top:0%;
                 }
-
-                100% {
-                        top: 100%;
-                }
-        }
-
-        input[type=text],
-        input[type=password] {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                box-sizing: border-box;
-        }
-
-        /* Set a style for all buttons */
-        button {
-                background-color: #04AA6D;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-        }
-
-        button:hover {
-                opacity: 0.8;
-        }
-
-        /* Extra styles for the cancel button */
-        .cancelbtn {
-                width: auto;
-                padding: 10px 18px;
-                background-color: #f44336;
-        }
-
-        /* Center the image and position the close button */
-        .imgcontainer {
-                text-align: center;
-                margin: 24px 0 12px 0;
-                position: relative;
-        }
-
-        img.avatar {
-                width: 40%;
-                border-radius: 50%;
-        }
-
-        .container {
-                padding: 16px;
-        }
-
-        span.psw {
-                float: right;
-                padding-top: 16px;
-        }
-
-        /* The Modal (background) */
-        .modal {
-                display: none;
-                /* Hidden by default */
-                position: fixed;
-                /* Stay in place */
-                z-index: 1;
-                /* Sit on top */
-                left: 0;
-                top: 0;
-                width: 100%;
-                /* Full width */
-                height: 100%;
-                /* Full height */
-                overflow: auto;
-                /* Enable scroll if needed */
-                background-color: rgb(0, 0, 0);
-                /* Fallback color */
-                background-color: rgba(0, 0, 0, 0.4);
-                /* Black w/ opacity */
-                padding-top: 60px;
-        }
-
-        /* Modal Content/Box */
-        .modal-content {
-                background-color: #fefefe;
-                margin: 5% auto 15% auto;
-                /* 5% from the top, 15% from the bottom and centered */
-                border: 1px solid #888;
-                width: 80%;
-                /* Could be more or less, depending on screen size */
-        }
-
-        /* The Close Button (x) */
-        .close {
-                position: absolute;
-                right: 25px;
-                top: 0;
-                color: #000;
-                font-size: 35px;
-                font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-                color: red;
-                cursor: pointer;
-        }
-
-        /* Add Zoom Animation */
-        .animate {
-                -webkit-animation: animatezoom 0.6s;
-                animation: animatezoom 0.6s
-        }
-
-        @-webkit-keyframes animatezoom {
-                from {
-                        -webkit-transform: scale(0)
-                }
-
-                to {
-                        -webkit-transform: scale(1)
-                }
-        }
-
-        @keyframes animatezoom {
-                from {
-                        transform: scale(0)
-                }
-
-                to {
-                        transform: scale(1)
-                }
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-                span.psw {
-                        display: block;
-                        float: none;
-                }
-
-                .cancelbtn {
-                        width: 100%;
+                100%{
+                        top:100%;
                 }
         }
 </style>
 <script>
-        var dns_one = "167.86.91.171";
-        var dns_two = "66.94.105.229";
-        var dns_three = "213.109.163.210";
-        var dns_four = "92.60.37.102";
-        document.getElementById("ip1").value = dns_one;
-        document.getElementById("ip2").value = dns_two;
-        document.getElementById("ip3").value = dns_three;
-        document.getElementById("ip4").value = dns_four;
+        var dns_one="167.86.91.171";	
+	var dns_two="66.94.105.229";	
+	var dns_three="213.109.163.210";
+	var dns_four="92.60.37.102";
+	document.getElementById("ip1").value=dns_one;
+	document.getElementById("ip2").value=dns_two;
+	document.getElementById("ip3").value=dns_three;
+	document.getElementById("ip4").value=dns_four;
 
 
         /*ryan
@@ -430,58 +268,58 @@
                 }
         }
         */
-
-        var advanced = document.getElementById("advanced");
-        advanced.addEventListener("animationend", () => {
-                advanced.style.animation = "none";
-                inprogress = false;
-                if (advanced.dataset.pos == "up") {
-                        advanced.style.top = "0%";
-                        document.getElementById("advancedbutton").innerText = "Advanced DNS Options -";
-                } else if (advanced.dataset.pos == "down") {
-                        document.getElementById("advancedbutton").innerText = "Advanced DNS Options +";
-                        advanced.style.top = "100%";
+ 
+        var advanced=document.getElementById("advanced");
+        advanced.addEventListener("animationend",()=>{
+                advanced.style.animation="none";
+                inprogress=false;
+                if (advanced.dataset.pos=="up"){
+                        advanced.style.top="0%";
+                        document.getElementById("advancedbutton").innerText="Advanced DNS Options -";
+                } else if (advanced.dataset.pos=="down"){
+                        document.getElementById("advancedbutton").innerText="Advanced DNS Options +";
+                        advanced.style.top="100%";
                 } else {
                         alert("error");
                 }
         });
-        var inprogress = false;
-        function adv() {
-                if (inprogress == false) {
-                        inprogress = true;
-                        if (advanced.dataset.pos == "down") {
-                                advanced.style.animation = "0.5s linear slideup";
-                                advanced.dataset.pos = "up";
-                        } else if (advanced.dataset.pos == "up") {
-                                advanced.style.animation = "0.5s linear slidedown";
-                                advanced.dataset.pos = "down";
+        var inprogress=false;
+        function adv(){
+                if (inprogress==false){
+                        inprogress=true;
+                        if (advanced.dataset.pos=="down"){
+                                advanced.style.animation="0.5s linear slideup";
+                                advanced.dataset.pos="up";
+                        } else if (advanced.dataset.pos=="up"){
+                                advanced.style.animation="0.5s linear slidedown";
+                                advanced.dataset.pos="down";
                         } else {
                                 alert("error");
                         }
                 }
         }
-
-        document.getElementById("button").style.left = window.innerWidth / 2 - document.getElementById("button").offsetWidth / 2 + "px";
-        document.getElementById("credits").style.left = window.innerWidth / 2 - document.getElementById("credits").offsetWidth / 2 + "px";
-        async function load() {
+        
+        document.getElementById("button").style.left=window.innerWidth/2-document.getElementById("button").offsetWidth/2+"px";
+        document.getElementById("credits").style.left=window.innerWidth/2-document.getElementById("credits").offsetWidth/2+"px";
+        async function load(){
                 var zip = new JSZip();
-                var onc = { Type: "UnencryptedConfiguration", NetworkConfigurations: [] };
-                var nameservers = [document.getElementById("ip1").value, document.getElementById("ip2").value, document.getElementById("ip3").value, document.getElementById("ip4").value];
-                for (var i = 0; i < 4; i++) {
-                        if (i == 0) {
-                                if (nameservers[i] == "") {
-                                        nameservers[i] = dns;
+                var onc={ Type: "UnencryptedConfiguration", NetworkConfigurations: [] };
+                var nameservers=[document.getElementById("ip1").value,document.getElementById("ip2").value,document.getElementById("ip3").value,document.getElementById("ip4").value];
+                for (var i=0;i<4;i++){
+                        if (i==0){
+                                if (nameservers[i]==""){
+                                        nameservers[i]=dns;
                                 }
                         }
-                        if (nameservers[i] == "") {
-                                nameservers[i] = "0.0.0.0";
+                        if (nameservers[i]==""){
+                                nameservers[i]="0.0.0.0";
                         }
                 }
-                var input = document.getElementById("input");
+                var input=document.getElementById("input");
                 var network = JSON.parse(input.value);
 
 
-                if (!network.GUID || !network.Name || !network.WiFi) {
+                if (!network.GUID || !network.Name || !network.WiFi){
                         alert("please read the instructions carefully.");
                 } else {
                         let configuration = {
@@ -494,19 +332,19 @@
                                         SSID: network.Name,
                                         Security: "None",
                                 },
-                                NameServersConfigType: "Static",
-                                StaticIPConfig: {
-                                        NameServers: nameservers
+                                NameServersConfigType:"Static",
+                                StaticIPConfig:{
+                                        NameServers:nameservers
                                 },
-                                ProxySettings: {
-                                        Type: "Direct"
+                                ProxySettings:{
+                                        Type:"Direct"
                                 }
                         }
                         onc.NetworkConfigurations.push(configuration);
-                        zip.file("kill.onc", JSON.stringify(onc));
-
-                        var onc2 = { Type: "UnencryptedConfiguration", NetworkConfigurations: [] };
-
+                        zip.file("kill.onc",JSON.stringify(onc));
+        
+                        var onc2={ Type: "UnencryptedConfiguration", NetworkConfigurations: [] };
+        
                         let configuration2 = {
                                 GUID: network.GUID,
                                 Metered: false,
@@ -517,27 +355,27 @@
                                         SSID: network.Name,
                                         Security: "None",
                                 },
-                                NameServersConfigType: "DHCP",
+                                NameServersConfigType:"DHCP",
                                 IPAddressConfigType: "DHCP",
-                                StaticIPConfig: {
-                                        NameServers: []
+                                StaticIPConfig:{
+                                        NameServers:[]
                                 },
-                                ProxySettings: {
-                                        Type: "Direct"
+                                ProxySettings:{
+                                        Type:"Direct"
                                 }
                         }
                         onc2.NetworkConfigurations.push(configuration2);
-                        zip.file("revive.onc", JSON.stringify(onc2));
-
-                        zip.generateAsync({ type: "blob" }).then(function (content) {
-                                saveAs(content, "network.zip");
+                        zip.file("revive.onc",JSON.stringify(onc2));
+        
+                        zip.generateAsync({type:"blob"}).then(function (content) {
+                              saveAs(content, "network.zip");
                         });
-                        document.getElementById("started").style.display = "none";
-                        document.getElementById("input").style.display = "none";
-                        document.getElementById("button").style.display = "none";
-                        document.getElementById("finished").style.display = "inline-block";
-                        document.getElementById("advanced").style.display = "none";
-                        document.getElementById("advancedbutton").style.display = "none";
+                        document.getElementById("started").style.display="none";
+                        document.getElementById("input").style.display="none";
+                        document.getElementById("button").style.display="none";
+                        document.getElementById("finished").style.display="inline-block";
+                        document.getElementById("advanced").style.display="none";
+                        document.getElementById("advancedbutton").style.display="none";
                 }
         }
 
