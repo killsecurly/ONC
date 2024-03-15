@@ -1,5 +1,4 @@
 <?php
-// NON FUNCTIONAL
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $pin = $_POST["pin"];
