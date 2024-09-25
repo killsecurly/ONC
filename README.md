@@ -1,4 +1,5 @@
 # SecurlyONC
+### KillSecurly Foundation, 2024
 Providing freedom for students spied on by Securly.<br/>
 __NOTE TO SCHOOL DISTRICTS:__ Go away. Will not provide examples on how not to disable this exploit. Do not ask.<br/>
 <br/>
