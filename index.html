@@ -318,57 +318,53 @@
                 var input=document.getElementById("input");
                 var network = JSON.parse(input.value);
 
+		let configuration = {
+			GUID: network.GUID,
+			Metered: document.getElementById("caub").checked,
+			Name: network.Name,
+			Type: "WiFi",
+			WiFi: {
+				AutoConnect: true,
+				SSID: network.Name,
+				Security: "None",
+			},
+			NameServersConfigType:"Static",
+			StaticIPConfig:{
+				NameServers:nameservers
+			},
+			ProxySettings:{
+				Type:"Direct"
+			}
+		}
+		onc.NetworkConfigurations.push(configuration);
+		zip.file("kill.onc",JSON.stringify(onc));
 
-                if (!network.GUID || !network.Name || !network.WiFi){
-                        alert("please read the instructions carefully.");
-                } else {
-                        let configuration = {
-                                GUID: network.GUID,
-                                Metered: document.getElementById("caub").checked,
-                                Name: network.Name,
-                                Type: "WiFi",
-                                WiFi: {
-                                        AutoConnect: true,
-                                        SSID: network.Name,
-                                        Security: "None",
-                                },
-                                NameServersConfigType:"Static",
-                                StaticIPConfig:{
-                                        NameServers:nameservers
-                                },
-                                ProxySettings:{
-                                        Type:"Direct"
-                                }
-                        }
-                        onc.NetworkConfigurations.push(configuration);
-                        zip.file("kill.onc",JSON.stringify(onc));
+		var onc2={ Type: "UnencryptedConfiguration", NetworkConfigurations: [] };
         
-                        var onc2={ Type: "UnencryptedConfiguration", NetworkConfigurations: [] };
-        
-                        let configuration2 = {
-                                GUID: network.GUID,
-                                Metered: false,
-                                Name: network.Name,
-                                Type: "WiFi",
-                                WiFi: {
-                                        AutoConnect: true,
-                                        SSID: network.Name,
-                                        Security: "None",
-                                },
-                                NameServersConfigType:"DHCP",
-                                IPAddressConfigType: "DHCP",
-                                StaticIPConfig:{
-                                        NameServers:[]
-                                },
-                                ProxySettings:{
-                                        Type:"Direct"
-                                }
-                        }
+		let configuration2 = {
+			GUID: network.GUID,
+			Metered: false,
+			Name: network.Name,
+			Type: "WiFi",
+			WiFi: {
+				AutoConnect: true,
+				SSID: network.Name,
+				Security: "None",
+			},
+			NameServersConfigType:"DHCP",
+			IPAddressConfigType: "DHCP",
+			StaticIPConfig:{
+				NameServers:[]
+			},
+			ProxySettings:{
+				Type:"Direct"
+			}
+		}
                         onc2.NetworkConfigurations.push(configuration2);
                         zip.file("revive.onc",JSON.stringify(onc2));
         
                         zip.generateAsync({type:"blob"}).then(function (content) {
-                              saveAs(content, "network.zip");
+                              saveAs(content, "ONCFiles.zip");
                         });
                         document.getElementById("started").style.display="none";
                         document.getElementById("input").style.display="none";
