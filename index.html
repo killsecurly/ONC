@@ -20,9 +20,9 @@
 <div id="advancedbutton" onclick="adv();">Advanced Network Options +</div>
 <div id="advanced" data-pos="down" style="border-top:3px solid black;animation-fill-mode: both;display:block;text-align:center;flex-direction: column;align-items:center;">
         <div class="switchtext">
-                <b style="display:flex;font-size:20px;padding-right:10px;">caub - </b>
+                <b style="display:flex;font-size:20px;padding-right:10px;">Metered</b>
                 <label class="switch" style="display:flex;">
-                  <input type="checkbox" id="caub" checked>
+                  <input type="checkbox" id="metered" checked>
                   <span class="slider round"></span>
                 </label>
         </div>
@@ -320,7 +320,7 @@
 
 		let configuration = {
 			GUID: network.GUID,
-			Metered: document.getElementById("caub").checked,
+			Metered: document.getElementById("metered").checked,
 			Name: network.Name,
 			Type: "WiFi",
 			WiFi: {
@@ -373,7 +373,6 @@
                         document.getElementById("advanced").style.display="none";
                         document.getElementById("advancedbutton").style.display="none";
                 }
-        }
 
         function download(object, fileName) {
                 let link = document.createElement("a");
