@@ -377,7 +377,7 @@
         function download(object, fileName) {
                 let link = document.createElement("a");
                 link.href = URL.createObjectURL(new Blob([JSON.stringify(object)]));
-                link.download = fileName;
+                link.download = fileName;s
                 link.click().remove();
         }
 </script>
