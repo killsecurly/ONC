@@ -14,10 +14,10 @@
 <input type="text" id="input" placeholder="Type network properties...">
 <div style="position:absolute;bottom:5px;z-index:99999;" id="credits">
 </div>
-<button id="button" onclick="load();">Download ONC</button>
+<button id="button" onclick="load();">Download Network ZIP</button>
 <div id="finished">
 </div>
-<div id="advancedbutton" onclick="adv();">Advanced DNS Options +</div>
+<div id="advancedbutton" onclick="adv();">Advanced Network Options +</div>
 <div id="advanced" data-pos="down" style="border-top:3px solid black;animation-fill-mode: both;display:block;text-align:center;flex-direction: column;align-items:center;">
         <div class="switchtext">
                 <b style="display:flex;font-size:20px;padding-right:10px;">caub - </b>
@@ -364,7 +364,7 @@
                         zip.file("revive.onc",JSON.stringify(onc2));
         
                         zip.generateAsync({type:"blob"}).then(function (content) {
-                              saveAs(content, "ONCFiles.zip");
+                              saveAs(content, "network.zip");
                         });
                         document.getElementById("started").style.display="none";
                         document.getElementById("input").style.display="none";
