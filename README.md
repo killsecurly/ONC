@@ -4,7 +4,7 @@ Providing freedom for students spied on by Securly.<br/>
 __NOTE TO SCHOOL DISTRICTS:__ Go away. Will not provide examples on how not to disable this exploit. Do not ask.<br/>
 <br/>
 The software `SecurlyONC` comes without any sort of warranty. All damages or inconvenience caused by SecurlyONC is all the user's liablity.<br/>
-## __v1.4.0 Stable for Chrome__<br/>
+## __v3.0.0 Stable for Chrome__<br/>
 ### How to Enable<br/>
 1. Go to `chrome://network#state` and click on `+` next to the network you want to enable ONC on.<br/>
 ![Chrome Network Page under State/Favorite Networks](https://i.imgur.com/6zmw6Y8.png)
