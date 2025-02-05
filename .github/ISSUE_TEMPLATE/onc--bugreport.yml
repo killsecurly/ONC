@@ -39,7 +39,7 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: terms
+    id: duplicates
     attributes:
       label: I have checked other issues for duplicates.
       description: You have confirmed that there are no other duplicate issues. 
