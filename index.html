@@ -5,12 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" 
           content="width=device-width,
-                   initial-scale=1.0">
+                    initial-scale=1.0">
     <title>ONC</title>
     <style>
         body {
             margin: 0;
             font-family: "Liter", serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            font-family: "Liter", serif;
+            margin: 0;
+            padding: 15px; /* Added padding for spacing */
+            background-color: greenyellow;
+            margin-top: auto;
+            display: flex; /* Use flexbox for the footer content */
+            justify-content: space-between; /* Space out the left and right content */
+            align-items: center; /* Align items vertically in the center */
+        }
+
+        .footer-left, .footer-right {
+            display: flex;
+            flex-direction: column;
         }
 
         .navbar {
@@ -104,32 +123,16 @@
         .actionbutton button {
             color: blue;
             font-family: Liter;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     </style>
 </head>
-
 <body>
-    <div style="position: absolute; z-index: 99999">
-      <input autocomplete="off" type="checkbox" id="aadsstickymfad0k16" hidden />
-      <div style="padding-top: 0; padding-bottom: auto;">
-        <div style="width:100%;height:auto;position:fixed;text-align:center;font-size:0;bottom:0;left:0;right:0;margin:auto">
-          <label for="aadsstickymfad0k16" style="top: 50%;transform: translateY(-50%);right:24px;; position: absolute;border-radius: 4px; background: rgba(248, 248, 249, 0.70); padding: 4px;z-index: 99999;cursor:pointer">
-            <svg fill="#000000" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490">
-              <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "/>
-            </svg>
-          </label>
-          <div id="frame" style="width: 100%;margin: auto;background: rgba(0, 0, 0, 0.50);position: relative; z-index: 99998;"><iframe data-aa=2409449 src=//acceptable.a-ads.com/2409449/?size=Adaptive style='border:0; padding:0; width:70%; height:auto; overflow:hidden; margin: auto'></iframe></div>
-        </div>
-        <style>
-      #aadsstickymfad0k16:checked + div {
-        display: none;
-      }
-    </style>
-    </div></div>
     <div class="navbar" id="myNavbar">
         <p href="#" class="logo"><img src="https://github.com/killsecurly/assets/blob/main/KSFLogoRed.png?raw=true" style="height: 60px"></p>
         <div class="menu">
-            <a href="https://killsecurly.com">Home</a> 
+            <a href="https://killsecurly.com">Home</a> 
             <a href="https://onc.killsecurly.com">ONC</a>
             <a href="https://interstellar.killsecurly.com">Interstellar</a>
             <a href="https://assets.killsecurly.com">Assets</a>
@@ -157,7 +160,7 @@
         Works for GoGuardian, Securly, and more<br>
         Fully maintained in-house</p>
     </div>
-    <div class="spt">
+    <div class="spt" style="font-size: 25px;">
         <p>Apply using your network type:</p>
     </div>
     <div class="actionbutton">
@@ -165,7 +168,7 @@
         <button><a href="https://forms.gle/fZpSvpJv1qoP2eRL8">IPv6</a></button>
         <button><a href="https://forms.gle/fZpSvpJv1qoP2eRL8">DOH</a></button>
     </div>
-    <div class="nt">
+    <div class="nt" style="padding-bottom: 100px">
         <p>If your device and network support IPv6, use IPv6.<br>
     If your device supports DNS over HTTPS, use DOH.<br>
     If you have no idea what IPv6 or DOH is, use IPv4.</p>
@@ -177,5 +180,19 @@
         }
     </script>
 </body>
-
-</html> 
+<footer>
+    <div class="footer-left">
+        <p>Copyright © 2023-2025 KillSecurly Foundation<br>
+        Usage of this site requires of agreement with the KillSecurly Foundation's Policy.<br><br>
+        KillSecurly is NOT responsible for any damages<br>caused by the incorrect usage of this software.<br><br>
+        killsecurly.com · KillSecurly Foundation · Established 2023
+    </p>
+    </div>
+    <div class="footer-right">
+        <p style="font-weight: bold;">CONTACT US</p>
+        <p>Questions? Comments? Concerns?<br>
+        administration@killsecurly.com<br><br>
+        Technical Problems?<br>wm@killsecurly.com</p>
+    </div>
+</footer>
+</html>
